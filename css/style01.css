@@ -143,23 +143,11 @@ a:focus {
         height: 54px;
     }
     .title-wrapper .head::before {
-        position: absolute;
-        content: "";
-        width: 20px;
-        height: 2px;
-        background-color: #000;
-        top: 25px;
-        left: -40px;   
+        top: 25px;  
     }
 
     .title-wrapper .head::after {
-        position: absolute;
-        content: "";
-        width: 20px;
-        height: 2px;
-        background-color: #000;
-        top: 25px;
-        right: -40px;  
+        top: 25px; 
     }
 }
 
@@ -220,7 +208,19 @@ a:focus {
     right: -40px;  
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+    .title-wrapper .head-right {
+        font-size: 48px;
+        line-height: 48px;
+        height: 54px;
+        margin-left: 20px;
+    }
+    .title-wrapper .head-right::before {
+        top: 45%; 
+    }
+}
+
+@media (min-width: 576px) {
     .title-wrapper .head-right {
         font-size: 48px;
         line-height: 48px;

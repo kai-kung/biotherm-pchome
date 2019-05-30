@@ -1,0 +1,1022 @@
+@charset "utf-8";
+
+
+
+
+/* Noto Sans 字型 */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700,900&display=swap&subset=chinese-traditional');
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  基本樣式
+/*-----------------------------------------------------------------------------------*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body,
+li,
+address {
+    line-height: 24px;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    outline: none;
+    margin: 0 auto;
+}
+
+a {
+    color: #fff;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    border: 3px solid #292929; 
+    height: 200px;
+    background-color: #474747;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 5px;
+    background-color: #292929;
+}
+
+
+
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+
+
+/* 背景顏色 */
+
+.bg-black {
+    background-color: #000;
+}
+
+
+
+/* 按鈕 */
+.btn-black {
+    width: 100%;
+    font-size: 20px;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    border-radius: 0px;
+    padding: 15px 10px;
+    color: #fff;
+    background-color: #292929;
+}
+
+@media (min-width: 576px) {
+    .btn-black {
+        width: 450px;
+        padding: 15px 30px;
+    }
+}
+
+.btn-black:hover,
+.btn-black:focus,
+.btn-black:active {
+    color: #fff;
+    background-color: #000;
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+.btn-icon {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 5px;
+}
+
+/* 標題外框 */
+.btn-title-wrapper {
+    width: 100%;
+    position: relative;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 5px 10px;  
+    margin-right: 10px;  
+}
+
+.btn-title-wrapper::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-title-wrapper::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  間隔 DIVIDERS
+/*-----------------------------------------------------------------------------------*/
+
+.divide15 {
+    width: 100%;
+    height: 15px;
+}
+
+.divide30 {
+    width: 100%;
+    height: 30px;
+}
+
+.divide60 {
+    width: 100%;
+    height: 60px;
+}
+
+
+/* margin-top */
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+
+
+
+
+
+/* margin-bottom */
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb60 {
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+/* margin-left */
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.ml60 {
+    margin-left: 60px;
+}
+
+
+
+
+
+
+/* margin-right */
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mr60 {
+    margin-right: 60px;
+}
+
+
+
+
+
+
+/* padding-top */
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.pt60 {
+    padding-top: 60px;
+}
+
+
+
+
+
+
+/* padding-bottom */
+
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+.pb60 {
+    padding-bottom: 60px;
+}
+
+
+
+
+
+
+/* padding-left */
+
+.pl15 {
+    padding-left: 15px;
+}
+
+.pl30 {
+    padding-left: 30px;
+}
+
+.pl60 {
+    padding-left: 60px;
+}
+
+
+
+
+
+
+/* padding-right */
+
+.pr15 {
+    padding-right: 15px;
+}
+
+.pr30 {
+    padding-right: 30px;
+}
+
+.pr60 {
+    padding-right: 60px;
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  導覽列
+/*-----------------------------------------------------------------------------------*/
+
+.main-card {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    z-index: 98;
+    -moz-box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1200px) {
+    .main-card {
+        display: none;
+    }
+}
+
+.main-card .card-content {
+    display: table;
+    margin: 0 auto;
+}
+
+.main-card .close-container {
+    position: absolute;
+    left: 3%;
+    top: 10%;
+    cursor: pointer;
+}
+
+
+.main-card .close {
+    font-size: 20px;
+}
+
+
+.main-card img {
+    padding: 15px 0;
+    width: 100%
+    max-width: 400px;
+}
+
+.main-head {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 97;
+}
+
+@media (min-width: 1200px) {
+    .main-head {
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+}
+
+
+.main-head .top {
+    background-color: #fff;
+}
+
+.main-head .top-content {
+    position: relative;
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .main-head .top-content {
+        padding: 20px 0;
+        display: block;
+    }
+}
+
+.main-head .top-content>img {
+    max-width: 150px;
+}
+
+.main-head .top-brand {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.main-head .top-title {
+    font-size: 36px;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    line-height: 36px;
+}
+
+.main-head .top-card {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+}
+
+.main-head .top-card img {
+    max-width: 400px;
+}
+
+
+.main-nav {
+    background: #000;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+}
+
+
+@media (min-width: 1200px) {
+    .main-nav {
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+        border-radius: 0px;
+    }
+}
+
+.main-nav:after {
+    clear: both;
+    content: "\00a0";
+    display: block;
+    height: 0;
+    font: 0px/0 serif;
+    overflow: hidden;
+}
+
+.nav-brand {
+    float: left;
+    margin: 0;
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    .nav-brand {
+        display: none;
+    }
+}
+
+.nav-brand img {
+    max-width: 100px;
+}
+
+.nav-brand a {
+    display: block;
+    padding: 12px 12px 12px 20px;
+    color: #555;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+#main-menu {
+    clear: both;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@media (min-width: 1200px) {
+    #main-menu {
+        clear: none;
+        overflow: visible;
+    }
+}
+
+#main-menu::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    border: 3px solid #292929; 
+    background-color: #474747;
+}
+
+#main-menu::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 5px;
+    background-color: #292929;
+}
+
+
+
+
+
+
+
+
+
+/* Mobile menu toggle button */
+
+.main-menu-btn {
+    float: right;
+    margin: 10px 30px 10px 10px;
+    position: relative;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    text-indent: 29px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+/* hamburger icon */
+
+.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    height: 2px;
+    width: 24px;
+    background: #ccc;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.main-menu-btn-icon:before {
+    content: '';
+    top: -7px;
+    left: 0;
+}
+
+.main-menu-btn-icon:after {
+    content: '';
+    top: 7px;
+    left: 0;
+}
+
+
+
+
+
+
+
+/* x icon */
+
+#main-menu-state:checked~.main-menu-btn .main-menu-btn-icon {
+    height: 0;
+    background: transparent;
+}
+
+#main-menu-state:checked~.main-menu-btn .main-menu-btn-icon:before {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#main-menu-state:checked~.main-menu-btn .main-menu-btn-icon:after {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+/* hide menu state checkbox (keep it visible to screen readers) */
+
+#main-menu-state {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+
+
+
+
+
+/* hide the menu in mobile view */
+
+#main-menu-state:not(:checked)~#main-menu {
+    display: none;
+}
+
+#main-menu-state:checked~#main-menu {
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    /* hide the button in desktop view */
+    .main-menu-btn {
+        position: absolute;
+        top: -99999px;
+    }
+    /* always show the menu in desktop view */
+    #main-menu-state:not(:checked)~#main-menu {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  形象區
+/*-----------------------------------------------------------------------------------*/
+
+.tv-wrapper {
+    margin-top: 93px;
+}
+
+
+
+
+/* 大於 768px  */
+
+@media (min-width: 768px) {
+    .tv-wrapper {
+        margin-top: 83px;
+    }
+}
+
+
+
+
+/* 大於 992px  */
+
+@media (min-width: 992px) {
+    .tv-wrapper {
+        margin-top: 93px;
+    }
+}
+
+
+
+
+/* 大於 1200px  */
+
+@media (min-width: 1200px) {
+    .tv-wrapper {
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  OWL CAROUSEL
+/*-----------------------------------------------------------------------------------*/
+
+.owl-theme .owl-controls .owl-nav [class*='owl-'] {
+    color: #fff;
+    margin: 0px;
+    line-height: 1;
+    font-size: 13px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+.owl-theme .owl-controls .owl-nav [class*='owl-']:hover {
+    background: #fff;
+    color: #2e2e2e;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+.custom-controls {
+    position: relative
+}
+
+.custom-controls .owl-slider-controls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    pointer-events: none;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    text-align: center;
+}
+
+.custom-controls .owl-slider-controls .owl-slider-nav [class*='owl-'] {
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    pointer-events: auto;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1;
+    font-size: 40px;
+    width: auto;
+    height: auto;
+    background: none;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+.custom-controls .owl-slider-controls .owl-slider-nav [class*='owl-']:hover {
+    color: #f7f7f7;
+}
+
+.custom-controls .owl-slider-controls .owl-slider-nav .owl-slider-prev {
+    left: 10px
+}
+
+.custom-controls .owl-slider-controls .owl-slider-nav .owl-slider-next {
+    right: 10px
+}
+
+.custom-controls .owl-slider-controls .owl-dots {
+    pointer-events: auto;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    background: #f1f1f1;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 12px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: rgb(228, 28, 38);
+}
+
+
+.tv-bn {
+    width: 100%;
+}
+.tv-bn .bn {
+    max-width: 100%;
+    min-height: 100%;
+}
+.tv-bn .bn img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+.tv-bn .bn img:nth-child(1) {
+    display: block;
+}
+.tv-bn .bn img:nth-child(2) {
+    display: none;
+}
+
+
+
+
+/* 小於 992px  */
+
+@media (max-width: 992px) {
+
+    .tv-bn .bn img:nth-child(1) {
+        display: none;
+    }
+    .tv-bn .bn img:nth-child(2) {
+        display: block;
+    }
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  活動區
+/*-----------------------------------------------------------------------------------*/
+.event-bn {
+    width: 100%;
+}
+.event-bn .bn {
+    max-width: 100%;
+    min-height: 100%;
+}
+.event-bn .bn img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+.event-bn .bn img:nth-child(1) {
+    display: block;
+}
+.event-bn .bn img:nth-child(2) {
+    display: none;
+}
+
+/* 小於 992px  */
+@media (max-width: 992px) {
+    .event-bn .bn img:nth-child(1) {
+        display: none;
+    }
+    .event-bn .bn img:nth-child(2) {
+        display: block;
+    }
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  產品
+/*-----------------------------------------------------------------------------------*/
+
+.bg {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.bg img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.bg img:nth-child(1) {
+    display: block;
+}
+
+.bg img:nth-child(2) {
+    display: none;
+}
+
+/* 小於 576px  */
+@media (max-width: 576px) {
+    .bg img:nth-child(1) {
+        display: none;
+    }
+    .bg img:nth-child(2) {
+        display: block;
+    }
+}
+
+
+
+
+
+.product .bg-2 {
+    max-width: 100%;
+    min-height: 100%;
+}
+.product .bg-2 img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+.product .bg-2 img:nth-child(1) {
+    display: block;
+    margin-top: 30px;
+}
+.product .bg-2 img:nth-child(2) {
+    display: none;
+    margin-top: 30px;
+}
+
+/* 小於 768px  */
+@media (max-width: 992px) {
+    .product .bg-2 img:nth-child(1) {
+        display: none;
+    }
+    .product .bg-2 img:nth-child(2) {
+        display: block;
+    }
+}
+
+
+
+
+
+
+/* 品牌故事 */
+.brand-bg {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.brand-bg img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.brand-bg img:nth-child(1) {
+    display: block;
+}
+
+.brand-bg img:nth-child(2) {
+    display: none;
+}
+
+.brand-bg img:nth-child(3) {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .brand-bg img:nth-child(1) {
+        display: none;
+    }
+    .brand-bg img:nth-child(2) {
+        display: block;
+    }
+    .brand-bg img:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-bg img:nth-child(1) {
+        display: none;
+    }
+    .brand-bg img:nth-child(2) {
+        display: none;
+    }
+    .brand-bg img:nth-child(3) {
+        display: block;
+    }
+}

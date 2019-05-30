@@ -558,7 +558,7 @@ a:focus {
 
 .main-menu-btn {
     float: right;
-    margin: 10px 30px 10px 10px;
+    margin: 10px 15px 10px 10px;
     position: relative;
     display: inline-block;
     width: 29px;
@@ -570,11 +570,6 @@ a:focus {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-@media (min-width: 1200px) {
-    .main-menu-btn {
-        margin: 10px 15px 10px 10px;
-    }
-}
 
 
 

@@ -105,7 +105,9 @@ a:focus {
 
 
 .title-wrapper .head {
-    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
     font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
     font-weight: 900;
     color: #000;
@@ -120,17 +122,114 @@ a:focus {
     width: 20px;
     height: 2px;
     background-color: #000;
-    margin-top: 12px;
-    margin-left: -30px;
+    top: 35%;
+    left: -40px;   
 }
+
 .title-wrapper .head::after {
     position: absolute;
     content: "";
     width: 20px;
     height: 2px;
     background-color: #000;
-    margin-top: 12px;
-    margin-left: 10px;
+    top: 35%;
+    right: -40px;  
+}
+
+@media (min-width: 768px) {
+    .title-wrapper .head {
+        font-size: 48px;
+        line-height: 48px;
+        height: 54px;
+    }
+    .title-wrapper .head::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: #000;
+        top: 25px;
+        left: -40px;   
+    }
+
+    .title-wrapper .head::after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: #000;
+        top: 25px;
+        right: -40px;  
+    }
+}
+
+
+.title-wrapper .head-left {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 900;
+    color: #000;
+    line-height: 24px;
+    height: 36px;
+    text-transform: uppercase;
+}
+
+.title-wrapper .head-left::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    top: 75%;
+    left: -40px;  
+}
+
+
+@media (min-width: 768px) {
+    .title-wrapper .head-left {
+        font-size: 48px;
+        line-height: 48px;
+        height: 54px;
+    }
+    .title-wrapper .head-left::before {
+        top: 45%;
+    }
+}
+
+.title-wrapper .head-right {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 900;
+    color: #000;
+    line-height: 24px;
+    height: 36px;
+    text-transform: uppercase;
+}
+
+.title-wrapper .head-right::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    top: -25%;
+    right: -40px;  
+}
+
+@media (min-width: 768px) {
+    .title-wrapper .head-right {
+        font-size: 48px;
+        line-height: 48px;
+        height: 54px;
+        margin-left: 20px;
+    }
+    .title-wrapper .head-right::before {
+        top: 45%; 
+    }
 }
 
 .title-wrapper .sub-head {

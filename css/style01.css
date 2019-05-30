@@ -98,14 +98,56 @@ a:focus {
 }
 
 
+/** 標題文字 */
+.title-wrapper {
+    text-align: center;    
+}
+
+
+.title-wrapper .head {
+    font-size: 24px;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 700;
+    color: #000;
+    line-height: 24px;
+    height: 36px;
+    text-transform: uppercase;
+}
+
+.title-wrapper .head::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin-top: 12px;
+    margin-left: -30px;
+}
+.title-wrapper .head::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.title-wrapper .sub-head {
+    font-size: 16px;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    height: 16px;
+    text-transform: uppercase;
+}
+
 
 
 /* 背景顏色 */
-
 .bg-black {
     background-color: #000;
 }
-
 
 
 /* 按鈕 */
@@ -143,7 +185,7 @@ a:focus {
 }
 
 /* 標題外框 */
-.btn-title-wrapper {
+.btn-wrapper .btn-title-wrapper {
     width: 100%;
     position: relative;
     font-size: 12px;
@@ -155,7 +197,7 @@ a:focus {
     margin-right: 10px;  
 }
 
-.btn-title-wrapper::before {
+.btn-wrapper .btn-title-wrapper::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -165,7 +207,7 @@ a:focus {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.btn-title-wrapper::after {
+.btn-wrapper .btn-title-wrapper::after {
     content: "";
     width: 100%;
     height: 100%;

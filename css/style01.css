@@ -566,7 +566,9 @@ a:focus {
 }
 
 @media (min-width: 1200px) {
-
+    .main-menu-btn {
+        margin: 10px 15px 10px 10px;
+    }
 }
 
 

@@ -240,7 +240,7 @@
         content: '';
         position: absolute;
         top: -18px;
-        left: 70px;
+        left: 20px;
         width: 0;
         height: 0;
         overflow: hidden;
@@ -250,7 +250,7 @@
     }
     .sm-clean>li>ul::after {
         top: -16px;
-        left: 71px;
+        left: 21px;
         border-width: 8px;
         border-color: transparent transparent #fff transparent;
     }

@@ -97,148 +97,84 @@ a:focus {
     margin-left: 0px;
 }
 
+.col-12, .col-md-6, .col-md-4, .col-sm-6, .col-sm-4 {
+    padding: 0;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
 
 /** 標題文字 */
 .title-wrapper {
-    text-align: center;    
+    position: relative;
+    font-size: 30px;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 700;
+    line-height: 36px;
+    color: #000; 
+    text-transform: uppercase; 
+    display: table;
+    margin: 0 auto;
+}
+
+.title-wrapper::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    top: 50%;
+    left: -40px;   
+}
+
+.title-wrapper::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    top: 50%;
+    right: -40px;  
+}
+
+@media (min-width: 768px) {
+    .title-wrapper {
+        font-size: 48px;
+        line-height: 48px;
+    }
 }
 
 
 .title-wrapper .head {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
-    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
-    font-weight: 900;
-    color: #000;
-    line-height: 24px;
-    height: 36px;
-    text-transform: uppercase;
-}
-
-.title-wrapper .head::before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background-color: #000;
-    top: 35%;
-    left: -40px;   
-}
-
-.title-wrapper .head::after {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background-color: #000;
-    top: 35%;
-    right: -40px;  
+    padding: 0 10px;
+    display: table;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
     .title-wrapper .head {
-        font-size: 48px;
-        line-height: 48px;
-        height: 54px;
-    }
-    .title-wrapper .head::before {
-        top: 25px;  
-    }
-
-    .title-wrapper .head::after {
-        top: 25px; 
+        display: inline-block;
     }
 }
 
 
-.title-wrapper .head-left {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
-    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
-    font-weight: 900;
-    color: #000;
-    line-height: 24px;
-    height: 36px;
-    text-transform: uppercase;
-}
 
-.title-wrapper .head-left::before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background-color: #000;
-    top: 75%;
-    left: -40px;  
-}
-
-
-@media (min-width: 768px) {
-    .title-wrapper .head-left {
-        font-size: 48px;
-        line-height: 48px;
-        height: 54px;
-    }
-    .title-wrapper .head-left::before {
-        top: 45%;
-    }
-}
-
-.title-wrapper .head-right {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
-    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
-    font-weight: 900;
-    color: #000;
-    line-height: 24px;
-    height: 36px;
-    text-transform: uppercase;
-}
-
-.title-wrapper .head-right::before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background-color: #000;
-    top: -25%;
-    right: -40px;  
-}
-
-@media (min-width: 576px) {
-    .title-wrapper .head-right {
-        font-size: 48px;
-        line-height: 48px;
-        height: 54px;
-        margin-left: 20px;
-    }
-    .title-wrapper .head-right::before {
-        top: 45%; 
-    }
-}
-
-@media (min-width: 576px) {
-    .title-wrapper .head-right {
-        font-size: 48px;
-        line-height: 48px;
-        height: 54px;
-        margin-left: 20px;
-    }
-    .title-wrapper .head-right::before {
-        top: 45%; 
-    }
-}
-
-.title-wrapper .sub-head {
-    font-size: 16px;
+.sub-head {
+    font-size: 20px;
     font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
     font-weight: 400;
-    line-height: 16px;
-    height: 16px;
+    line-height: 40px;
+    text-align: center;
     text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .sub-head {
+        font-size: 24px;
+        line-height: 48px;
+    }
 }
 
 
@@ -1102,7 +1038,7 @@ a:focus {
 }
 
 /* 小於 768px  */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .product .bg-2 img:nth-child(1) {
         display: none;
     }

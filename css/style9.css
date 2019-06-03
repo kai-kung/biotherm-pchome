@@ -764,36 +764,10 @@ a:focus {
 /*-----------------------------------------------------------------------------------*/
 
 .tv-wrapper {
-    margin-top: 93px;
+    margin-top: 99px;
 }
-
-
-
-
-/* 大於 768px  */
-
-@media (min-width: 768px) {
-    .tv-wrapper {
-        margin-top: 83px;
-    }
-}
-
-
-
-
-/* 大於 992px  */
-
-@media (min-width: 992px) {
-    .tv-wrapper {
-        margin-top: 93px;
-    }
-}
-
-
-
 
 /* 大於 1200px  */
-
 @media (min-width: 1200px) {
     .tv-wrapper {
         margin-top: 0px;
